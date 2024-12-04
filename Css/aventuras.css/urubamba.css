@@ -1,0 +1,123 @@
+.tours {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tours h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tours p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tour-rafting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.tour-rafting h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+.tour-rafting img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    order: 1;
+}
+
+.tour-rafting p {
+    flex-basis: 55%;
+    order: 2;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .tour-rafting {
+        display: block;
+        text-align: center;
+    }
+
+    .tour-rafting img {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .tour-rafting p {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header.abajo{
+    background: #080808;
+    padding: 15px 20px;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header .logo{
+    position: relative;
+    color: rgb(252, 246, 246);
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo.logo,
+header.abajo ul li a{
+    color: rgb(221, 220, 220);
+}
